@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                layout="@layout/all_title_layout"
+                />
+
+    <LinearLayout
+        android:id="@+id/lin_findtimeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/all_theme_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+        <RelativeLayout
+            android:id="@+id/re_settingtime_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+             >
+            <TextView
+                android:id="@+id/remessage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="开始时间"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txt_show_time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:20"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img_time_start_right_view"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/img_time_start_right_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/my_arrows_normal"
+                />
+        </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray_line"/>
+            <RelativeLayout
+                android:id="@+id/re_settingtime_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="结束时间"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/txt_show_time_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_time_stop_right_view"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/img_time_stop_right_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/my_arrows_normal"
+                    />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray_line"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="重复"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/txt_show_time_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周一，周二，周三，周四，周五，周六"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_time_cf_right_view"
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/img_time_cf_right_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/my_arrows_normal"
+                    />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray_line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/check_seven"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="日"
+                    android:button="@null"
+                    android:background="@drawable/check_bg"
+                    android:textSize="16sp" />
+                <CheckBox
+                    android:id="@+id/check_one"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="一"
+                    android:button="@null"
+                    android:background="@drawable/check_bg"
+                    android:textSize="16sp" />
+                <CheckBox
+                    android:id="@+id/check_two"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="二"
+                    android:button="@null"
+                    android:background="@drawable/check_bg"
+                    android:textSize="16sp" />
+                <CheckBox
+                    android:id="@+id/check_three"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/check_bg"
+                    android:text="三"
+                    android:textSize="16sp" />
+                <CheckBox
+                    android:id="@+id/check_four"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/check_bg"
+                    android:text="四"
+                    android:textSize="16sp" />
+                <CheckBox
+                    android:id="@+id/check_five"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/check_bg"
+                    android:text="五"
+                    android:textSize="16sp" />
+                <CheckBox
+                    android:id="@+id/check_six"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/check_bg"
+                    android:text="六"
+                    android:textSize="16sp" />
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

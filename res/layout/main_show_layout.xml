@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题-->
+    <!--标题栏需要联动就添加  layout_behavior属性-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/login_linear_id"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="@color/blue"-->
+            <!--&gt;-->
+        <!--</LinearLayout>-->
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--&gt;-->
+        <!--</android.support.v7.widget.Toolbar>-->
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            layout="@layout/titlebar_layout"
+            />
+        <!--viewpager-->
+        <com.mcz.fisheries_instituteproject.view.NoScrollViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.mcz.fisheries_instituteproject.view.NoScrollViewPager>
+
+    </LinearLayout>
+
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/bye_burger"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--app:itemIconTint="#fff"-->
+        <!--app:itemTextColor="#fff"-->
+        <!--app:layout_behavior="@string/bye_burger_bottom_behavior"-->
+        <!--app:menu="@menu/bottom"-->
+        <!--&gt;-->
+    <!--</android.support.design.widget.BottomNavigationView>-->
+    <com.mcz.fisheries_instituteproject.view.TabContainerView
+        android:id="@+id/ll_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:layout_behavior="@string/bye_burger_bottom_behavior" />
+    <!--圆形-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_behavior="@string/bye_burger_float_behavior"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Fisheries_InstituteProject</string>
+
+
+    <string name="bye_burger_float_behavior">com.mcz.fisheries_instituteproject.view.libutils.ByeBurgerFloatButtonBehavior</string>
+
+    <string name="bye_burger_bottom_behavior">com.mcz.fisheries_instituteproject.view.libutils.ByeBurgerBottomBehavior</string>
+    <string name="bye_burger_title_behavior">com.mcz.fisheries_instituteproject.view.libutils.ByeBurgerTitleBehavior</string>
+
+
+    <string name="title_device">首页</string>
+    <string name="title_area">报警</string>
+    <string name="title_function">控制</string>
+    <string name="title_setting">个人中心</string>
+    <array name="tab_main_title">
+        <item>首页</item>
+        <item>报警</item>
+        <item>控制</item>
+        <item>个人中心</item>
+    </array>
+    <string name="water_tank_address">所在水槽：</string>
+    <string name="water_tank_name_number1">一号水槽</string>
+    <string name="water_tank_name_number2">二号水槽</string>
+    <string name="water_tank_name_number3">三号水槽</string>
+    <string name="water_tank_name_number4">四号水槽</string>
+    <string name="water_tank_name_number5">五号水槽</string>
+    <string name="water_tank_name_number6">六号水槽</string>
+
+    <array name="add_timer_name">
+        <item>定时一</item>
+        <item>定时二</item>
+        <item>定时三</item>
+        <item>定时四</item>
+        <item>定时五</item>
+        <item>定时六</item>
+        <item>定时七</item>
+        <item>定时八</item>
+        <item>定时九</item>
+        <item>定时十</item>
+    </array>
+
+    <array name="week_every">
+        <item>定时一</item>
+        <item>定时二</item>
+        <item>定时三</item>
+        <item>定时四</item>
+        <item>定时五</item>
+        <item>定时六</item>
+        <item>定时七</item>
+        <item>定时八</item>
+        <item>定时九</item>
+        <item>定时十</item>
+    </array>
+
+
+</resources>
